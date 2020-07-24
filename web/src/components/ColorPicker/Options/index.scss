@@ -1,0 +1,36 @@
+.option-container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.option-item {
+  position: relative;
+}
+.option-item::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  margin-top: -7.5px;
+  border: 1px solid #111;
+}
+
+.option-item-active::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  margin-top: -7.5px;
+  background-color: #111;
+}

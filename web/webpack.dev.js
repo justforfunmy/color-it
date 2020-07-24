@@ -93,7 +93,7 @@ module.exports = {
         loader: 'html-loader'
       },
       {
-        exclude: /\.(css|less|scss|js|html|jpg|png|gif)$/,
+        exclude: /\.(css|less|scss|js|html|jpg|png|gif|json)$/,
         use: [
           {
             loader: 'file-loader',

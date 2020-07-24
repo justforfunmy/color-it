@@ -1,0 +1,40 @@
+.picker-container {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: transform ease 0.5s;
+  z-index: 1000;
+  background-color: #fff;
+  box-shadow: 5px 0 5px lightgray;
+}
+
+.picker-container::after {
+  content: 'PICK';
+  width: 50px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  right: -50px;
+  margin-top: -150px;
+  background-color: skyblue;
+  color: #fff;
+  writing-mode: vertical-lr;
+  font-size: 26px;
+  letter-spacing: 6px;
+  border-radius: 0 10px 10px 0;
+}
+
+.picker-container:hover {
+  transform: translateX(0);
+}
+
+.picker-list {
+  flex: 1 auto;
+}

@@ -1,0 +1,31 @@
+.header-container {
+  height: 52px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 80px;
+  .header-logo {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 30px;
+  }
+  .header-desc {
+    flex: 1 auto;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .header-nav-item {
+      padding: 0 20px;
+      cursor: pointer;
+    }
+  }
+  .header-login {
+    padding: 5px 15px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 30px;
+  }
+}
