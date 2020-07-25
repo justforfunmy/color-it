@@ -34,25 +34,23 @@ const render = ({ value, firstAsBackground }) => {
   return (
     <div className="header-container">
       <div className="header-logo">
-        <span style={{ color: `rgb(${first})` }}>LOGO</span>
+        <span>LOGO</span>
       </div>
       <div className="header-desc">
-        <span style={{ color: `rgb(${second})` }}>here is description</span>
+        <span>here is description</span>
       </div>
       <div className="header-nav">
-        <div className="header-nav-item">
-          <span style={{ color: `rgb(${first})` }}>导航</span>
+        <div>
+          <span>导航</span>
         </div>
         <div className="header-nav-item">
-          <span style={{ color: `rgb(${first})` }}>导航</span>
+          <span>导航</span>
         </div>
         <div className="header-nav-item">
-          <span style={{ color: `rgb(${first})` }}>导航</span>
+          <span>导航</span>
         </div>
       </div>
-      <div className="header-login" style={{ backgroundColor: `rgb(${forth})` }}>
-        login
-      </div>
+      <div className="header-login">login</div>
     </div>
   );
 };
