@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { isLight } from '../../util';
 
 const render = ({ value, firstAsBackground }) => {
-	const [first, second, , forth] = value;
+  const [first, second, , forth] = value;
   return (
     <div className={`header-container ${firstAsBackground ? 'first-bg' : ''}`}>
       <div className="header-logo">
@@ -15,13 +15,13 @@ const render = ({ value, firstAsBackground }) => {
       </div>
       <div className="header-nav">
         <div className="header-nav-item">
-          <span>导航</span>
+          <span>Navigator</span>
         </div>
         <div className="header-nav-item">
-          <span>导航</span>
+          <span>Demo</span>
         </div>
         <div className="header-nav-item">
-          <span>导航</span>
+          <span>Options</span>
         </div>
       </div>
       <div className="header-login">login</div>

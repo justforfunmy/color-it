@@ -1,0 +1,30 @@
+.welcome-container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .welcome-title {
+    color: var(--first);
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .welcome-desc {
+    color: var(--second);
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  .welcome-start {
+    background-color: var(--forth);
+    color: var(--text);
+    padding: 5px 25px;
+    font-size: 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--first);
+    }
+  }
+}

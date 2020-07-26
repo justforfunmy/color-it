@@ -1,7 +1,7 @@
 import { SETVALUE, TRIGGERBG } from './constant';
 
 const initialState = {
-  value: ['14,154,167', '61,164,171', '246,205,97', '254,138,113'],
+  value: ['22,36,71', '31,64,104', '27,27,47', '228,63,90'],
   firstAsBackground: false
 };
 

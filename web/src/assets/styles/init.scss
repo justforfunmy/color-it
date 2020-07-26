@@ -73,8 +73,8 @@ ol {
   list-style: decimal;
 }
 a {
-	text-decoration: none;
-	color:#173e43;
+  text-decoration: none;
+  color: #173e43;
 }
 a:hover {
   text-decoration: none;
@@ -101,4 +101,12 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+span {
+  transition: color ease 0.5s;
+}
+
+div {
+  transition: background-color ease 0.5s;
 }

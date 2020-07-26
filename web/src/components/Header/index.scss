@@ -5,6 +5,8 @@
   align-items: center;
   padding: 0 80px;
   color: var(--first);
+  box-shadow: 0 1px 3px lightgray;
+  font-weight: 500;
   .header-logo {
     font-size: 26px;
     font-weight: bold;
@@ -24,20 +26,28 @@
       cursor: pointer;
       &:hover {
         color: var(--second);
+        transform: translateY(-3px);
+        transition: transform ease 0.2s;
       }
     }
   }
   .header-login {
-    padding: 5px 15px;
+    padding: 5px 25px;
     background-color: var(--forth);
     color: #fff;
     border-radius: 5px;
     margin-left: 30px;
     cursor: pointer;
+    &:hover {
+      background-color: var(--first);
+    }
   }
 }
 
 .first-bg {
   background-color: var(--first);
   color: var(--second);
+  .header-nav .header-nav-item:hover {
+    color: var(--third);
+  }
 }
