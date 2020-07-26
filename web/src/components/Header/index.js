@@ -4,43 +4,17 @@ import { connect } from 'react-redux';
 import { isLight } from '../../util';
 
 const render = ({ value, firstAsBackground }) => {
-  const [first, second, , forth] = value;
-  if (firstAsBackground) {
-    return (
-      <div className="header-container" style={{ backgroundColor: `rgb(${first})` }}>
-        <div className="header-logo">
-          <span style={{ color: `${isLight(first) ? '#111' : '#fff'}` }}>LOGO</span>
-        </div>
-        <div className="header-desc">
-          <span style={{ color: `${isLight(first) ? '#111' : '#fff'}` }}>here is description</span>
-        </div>
-        <div className="header-nav">
-          <div className="header-nav-item">
-            <span style={{ color: `${isLight(first) ? '#111' : '#fff'}` }}>导航</span>
-          </div>
-          <div className="header-nav-item">
-            <span style={{ color: `${isLight(first) ? '#111' : '#fff'}` }}>导航</span>
-          </div>
-          <div className="header-nav-item">
-            <span style={{ color: `${isLight(first) ? '#111' : '#fff'}` }}>导航</span>
-          </div>
-        </div>
-        <div className="header-login" style={{ backgroundColor: `rgb(${forth})` }}>
-          login
-        </div>
-      </div>
-    );
-  }
+	const [first, second, , forth] = value;
   return (
-    <div className="header-container">
+    <div className={`header-container ${firstAsBackground ? 'first-bg' : ''}`}>
       <div className="header-logo">
-        <span>LOGO</span>
+        <span>Color IT</span>
       </div>
       <div className="header-desc">
         <span>here is description</span>
       </div>
       <div className="header-nav">
-        <div>
+        <div className="header-nav-item">
           <span>导航</span>
         </div>
         <div className="header-nav-item">

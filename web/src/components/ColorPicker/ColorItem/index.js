@@ -9,6 +9,10 @@ const ColorItem = (props) => {
   const result = formatColorCode(code);
   const rgbs = result.map((item) => hex2rgb(`#${item}`));
   const handlePick = () => {
+    document.body.style.setProperty('--first', `rgb(${rgbs[0]})`);
+    document.body.style.setProperty('--second', `rgb(${rgbs[1]})`);
+    document.body.style.setProperty('--third', `rgb(${rgbs[2]})`);
+    document.body.style.setProperty('--forth', `rgb(${rgbs[3]})`);
     setColorValue(rgbs);
   };
   return (

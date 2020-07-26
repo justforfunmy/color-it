@@ -9,9 +9,11 @@
     font-size: 26px;
     font-weight: bold;
     padding: 0 30px;
+    cursor: pointer;
   }
   .header-desc {
     flex: 1 auto;
+    cursor: pointer;
   }
   .header-nav {
     display: flex;
@@ -20,13 +22,22 @@
     .header-nav-item {
       padding: 0 20px;
       cursor: pointer;
+      &:hover {
+        color: var(--second);
+      }
     }
   }
   .header-login {
     padding: 5px 15px;
-    background-color: #111;
+    background-color: var(--forth);
     color: #fff;
     border-radius: 5px;
     margin-left: 30px;
+    cursor: pointer;
   }
+}
+
+.first-bg {
+  background-color: var(--first);
+  color: var(--second);
 }
